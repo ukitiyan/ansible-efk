@@ -2,11 +2,7 @@
 - hosts: server
   become: yes 
   roles:
+    - gcc
+    - mysql-devel
     - td-agent
     - limits
-    - kernel
-    - libcurl
-    - jdk
-    - elasticsearch
-    - kibana
-    - httpd

@@ -1,6 +1,8 @@
 ---
 td_agent:
   plugins:
-    - { name: 'fluent-plugin-elasticsearch' }
+    - { name: 'fluent-plugin-s3' }
+    - { name: 'fluent-plugin-rds-log' }
+    - { name: 'fluent-plugin-rds-error-log' }
   port: 24224
   bindaddress: 0.0.0.0
